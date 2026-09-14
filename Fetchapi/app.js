@@ -1,6 +1,6 @@
 const cl = console.log;
 
-// API URL
+// first API URL
 const BASE_URL = "https://jsonplaceholder.typicode.com";
 const POST_URL = `${BASE_URL}/posts`;
 
@@ -30,7 +30,7 @@ xhr.onload = function () {
         // Loop through posts
         data.forEach(post => {
 
-            result += `
+            result += 
                 <div class="col-md-4 mb-4">
 
                     <div class="card h-100 shadow-sm">
@@ -68,10 +68,10 @@ xhr.onload = function () {
                     </div>
 
                 </div>
-            `;
+            
         });
 
-        // Get HTML container
+       // Get HTML container
         const postContainer =
             document.getElementById("postsContainer");
 
@@ -99,4 +99,4 @@ function removePost(id) {
 
     cl("Remove Post ID:", id);
 
-}
+} 
